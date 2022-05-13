@@ -6,8 +6,10 @@ import landingImg from '../../assets/images/landing@3x.png'
 import studyIcon from '../../assets/images/icons/study.png'
 import giveClassesIcon from '../../assets/images/icons/give-classes.png'
 import purpleHeartIcon from '../../assets/images/icons/heart.png'
+import { Link } from "react-router-dom";
 
 import './style.css'
+
 
 function Landing(){
   return (
@@ -21,15 +23,15 @@ function Landing(){
         <img src={landingImg} alt="Plataforma de estudos" className="hero-image" />
 
         <div className="buttons-container">
-          <a href="" className="study">
+          <Link to="/study" className="study">
             <img src={studyIcon} alt="Estudar" />
             Estudar
-          </a>
+          </Link>
 
-          <a href="" className="give-classes">
+          <Link to="/give-classes" className="give-classes">
             <img src={giveClassesIcon} alt="Dar aulas" />
             Dar aulas
-          </a>
+          </Link>
         </div>
 
         <span className="total-connections">
