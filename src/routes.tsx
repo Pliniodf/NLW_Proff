@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom"
+import { BrowserRouter, Route, Routes as RoutesRouter } from "react-router-dom"
 import Landing from "./pages/Landing";
 import TeacherList from "./pages/TeacherList";
 import TeacherForm from "./pages/theacherForm";
@@ -7,11 +7,11 @@ import TeacherForm from "./pages/theacherForm";
 const Routes = () => {
   return (
     <BrowserRouter>
-     <Switch>
-      <Route path="/" exact component={Landing} />
-      <Route path="/study" component={TeacherList} />
-      <Route path="/give-classes" component={TeacherForm} />
-     </Switch>
+      <RoutesRouter>
+          <Route path="/*" element={<Landing />} />
+          <Route path="/study" element={<TeacherList />} />
+          <Route path="/give-classes" element={<TeacherForm />} />
+      </RoutesRouter>
     </BrowserRouter>
   )
 }
