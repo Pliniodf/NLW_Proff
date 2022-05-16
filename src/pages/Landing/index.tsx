@@ -8,7 +8,7 @@ import giveClassesIcon from '../../assets/images/icons/give-classes.png'
 import purpleHeartIcon from '../../assets/images/icons/heart.png'
 import { Link } from "react-router-dom";
 
-import './style.css'
+import './styles.css'
 
 
 function Landing(){

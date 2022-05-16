@@ -1,12 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
-import logoImg from '../../assets/images/logo.png'
-import backIcon from '../../assets/images/icons/back.png'
-import whatsappIcon from '../../assets/images/icons/whatsapp.png'
-
-import './style.css'
 import PageHeader from "../../components/PageHeader";
+import TeacherItem from "../../components/teacherItem";
+
+import './styles.css'
+
 
 function TeacherList() {
   return (
@@ -31,29 +29,11 @@ function TeacherList() {
       </PageHeader>
 
       <main>
-        <article className="teacher-item">
-          <header>
-            <img src="https://avatars.githubusercontent.com/u/93495052?v=4" alt="Plinio" />
-            <div>
-              <strong>Plinio</strong>
-              <span>Química</span>
-            </div>
-          </header>
-
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              <br /><br />
-             Quae expedita optio recusandae. Veritatis eum animi ut voluptatem voluptate atque, hic libero officia distinctio repellendus ratione, praesen</p>
-            
-          <footer>
-            <p>
-            Preço/hora
-            <strong>R$ 80,00</strong>
-            </p>
-            <button type="button">
-              <img src="{whatsappIcon}" alt="Entrar em contato" />
-            </button>
-          </footer>
-        </article>
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
+        <TeacherItem />
       </main>
     </div>
   )
